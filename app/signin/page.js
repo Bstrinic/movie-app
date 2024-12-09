@@ -7,15 +7,21 @@ const SignIn = () => {
   const router = useRouter();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const hardCodedUser = {
+    username: "johndoe",
+    password: "password",
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const user = user.find(
-      (user) => user.username === username && user.password === password
-    );
+    // const user = user.find(
+    //   (user) => user.username === username && user.password === password
+    // );
 
-    if (user) {
+    if (username === hardCodedUser.username && password === hardCodedUser.password) {
       router.push("/home");
     } else {
       setError("Invalid username or password");
@@ -68,7 +74,7 @@ const SignIn = () => {
         </div>
         <div className="flex m-2">
           <p className="font-bold pr-2">Don't have an account?</p>
-          <a href="" className="text-blue-500 hover:text-blue-600 ">
+          <a href="/signup" className="text-blue-500 hover:text-blue-600 ">
             Sign Up
           </a>
         </div>
