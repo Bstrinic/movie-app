@@ -73,8 +73,8 @@ const SignIn = () => {
           <p>OR</p>
         </div>
         <div className="flex m-2">
-          <p className="font-bold pr-2">Don't have an account?</p>
-          <a href="/signup" className="text-blue-500 hover:text-blue-600 ">
+          <p className="font-bold pr-2">Don&apos;s have an account?</p>
+          <a href="/signup" className="text-blue-500 hover:text-blue-600">
             Sign Up
           </a>
         </div>
