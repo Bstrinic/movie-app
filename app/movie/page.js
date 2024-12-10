@@ -21,11 +21,11 @@ const MovieBox = ({ movie, onClose }) => {
   }
 
   return (
-    <div className="fixed inset-0 mx-auto my-auto w-[1000px] h-[550px] bg-[#ADD8E6] shadow-lg rounded-lg flex flex-col p-6">
+    <div className="fixed inset-0 mx-auto my-auto w-[1000px] h-[550px] bg-black/90 shadow-lg rounded-lg flex flex-col p-6">
       {/* Close Button */}
       <button
         onClick={onClose}
-        className="ml-auto text-sm text-white bg-red-500 px-3 py-1 rounded hover:bg-red-700"
+        className="ml-auto text-sm text-white bg-red-500 px-3 py-1 rounded hover:bg-blue-600"
       >
         Close
       </button>
@@ -40,20 +40,20 @@ const MovieBox = ({ movie, onClose }) => {
         />
 
         {/* Movie Info */}
-        <div className="flex flex-col justify-start">
-          <h1 className="text-4xl font-bold mb-4">{movieDetails.original_title}</h1>
-          <p className="text-sm black mb-2">
+        <div className="flex flex-col ">
+          <h1 className="text-4xl justify-center items-center text-white font-bold mb-4">{movieDetails.original_title}</h1>
+          <p className="text-sm text-white mb-2">
             <strong>Release Date:</strong> {movieDetails.release_date}
           </p>
-          <p className="text-sm text-black mb-2">
+          <p className="text-sm text-white mb-2">
             <strong>Rating:</strong> {movieDetails.vote_average} / 10
           </p>
-          <p className="text-black mb-4">{movieDetails.overview}</p>
+          <p className="text-white mb-4">{movieDetails.overview}</p>
           <div>
             <a
               href={`https://www.themoviedb.org/movie/${movieDetails.id}`}
               target="_blank"
-              className="text-blue-500 underline hover:text-blue-700"
+              className="text-white underline hover:text-blue-700"
             >
               View More Details
             </a>
