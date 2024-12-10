@@ -47,8 +47,8 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-full p-4">
-      <h1 className="text-lg font-bold">Popular Movies</h1>
+    <div className="flex flex-col justify-center items-center min-h-full p-4 bg-gray-200">
+      <h1 className="text-4xl items-start justify-center font-bold">Popular Movies</h1>
       <div className="flex flex-wrap gap-6 justify-center">
         {movies.map((movie) => (
           <div

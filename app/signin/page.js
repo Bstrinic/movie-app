@@ -32,8 +32,8 @@ const SignIn = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen">
-      <div className="border-solid border-4 border-black p-8 shadow-lg ">
+    <div className="flex justify-center items-center min-h-screen bg-gray-200">
+      <div className="border-solid border-4 border-black bg-gray-300 p-8 shadow-lg ">
         <div className="flex justify-center items-center font-bold text-lg">
           <h1 className="text-blue-600 mb-10">FilmRewind</h1>
         </div>
