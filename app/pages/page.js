@@ -1,6 +1,6 @@
 "use client"
 
-import SignIn from "./signin/page";
+import SignIn from "./SigninPage";
 
 export default function Home() {
   return (

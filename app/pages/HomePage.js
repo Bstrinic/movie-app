@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import MovieBox from "../movie/page";
+import MovieBox from "../component/MoviePopUp";
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
